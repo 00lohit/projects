@@ -85,8 +85,9 @@ nav div ul li a:hover, nav div a:hover{
 .left{
     background-color: rgb(255, 255, 255);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 70vw;
 
 }
@@ -117,9 +118,88 @@ nav div ul li a:hover, nav div a:hover{
  list-style: none;
 }
 
+.ham-bg, .btn{
+  display: none;
+}
+
+
+.container {
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+.container .fill {
+    scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.profile h2{
+    color: rgb(77, 75, 75);
+}
+
+.profile h1{
+    color: rgb(3, 3, 73);
+}
+.left .img{
+    background-image: url(./profile.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-left: 20%;
+    margin-right: 10%;
+
+}
+
+.skills div h2{
+    color: rgb(31, 27, 27);
+}
+
+.skills div ul li{
+    color: rgb(43, 42, 42);
+}
+
+.watsapp{
+    background-color:#25d366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watsapp a i{
+    font-size:40px;
+    color:#ffffff;
+
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
+
+    .ham-bg, .btn{
+        display: initial;
+    }
 
 
     nav{
@@ -187,6 +267,7 @@ nav div ul li a:hover, nav div a:hover{
 
  .btn ul li{
     margin-top: 10px;
+    font-size: 30px;
  }
 
 
@@ -203,6 +284,17 @@ nav div ul li a:hover, nav div a:hover{
     transition: transform .5s ease-in-out;
  }
 
+ .skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vw;
+ }
+
+ .skills div{
+ margin-bottom: 5vh;
+ }
 
 
 }
+

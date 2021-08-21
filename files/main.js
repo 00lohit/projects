@@ -1,8 +1,12 @@
-window.addEventListener("scroll", (event) => {
-    let scroll = Math.floor(this.scrollY);
-    console.log(scroll)
-    
-    let limit = document.body.offsetHeight - window.innerHeight;
+
+
+let cont = document.querySelector(".container")
+
+cont.addEventListener("scroll", (event) => {
+    let scroll = cont.scrollTop;
+
+    let limit = cont.scrollHeight - cont.clientHeight;
+
 
     let nav = document.querySelector("nav");
 
@@ -21,10 +25,16 @@ window.addEventListener("scroll", (event) => {
 });
 
 
-let btn = document.querySelector(".ham")
+let btn = document.querySelector(".ham");
+let menu = document.querySelector(".btn");
 
-btn.addEventListener("click",()=>{
-    let menu = document.querySelector(".btn");
+function toggle(){
     menu.classList.toggle('hide');
     menu.classList.toggle('shown');
-})
+}
+
+
+btn.addEventListener("click",toggle);
+
+menu.addEventListener("click",toggle);
+
