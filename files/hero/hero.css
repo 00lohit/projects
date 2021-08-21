@@ -1,0 +1,23 @@
+#particles-js, #contact, .info, .right{
+    background-color: #000000;
+    animation: bg-color 10s infinite;
+    -webkit-animation: bg-color 10s infinite;
+  }
+
+  
+  
+  @-webkit-keyframes bg-color {
+    0% { background-color: #000000; }
+    20% { background-color: #2b2a25; }
+    40% { background-color: #252a2b; }
+    60% { background-color: #272b25; }
+ 
+  }
+  
+  @keyframes bg-color {
+    0% { background-color: #000000; }
+    20% { background-color: #2b2a25; }
+    40% { background-color: #252a2b; }
+    60% { background-color: #272b25; }
+  }
+
