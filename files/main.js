@@ -6,10 +6,6 @@ window.addEventListener("scroll", (event) => {
 
     let nav = document.querySelector("nav");
 
-    let tag = document.activeElement.id;
-
-    console.log(tag);
-
     if(scroll == 0){
       nav.style.visibility = "visible";
       nav.classList.remove("scroll");  
@@ -23,3 +19,12 @@ window.addEventListener("scroll", (event) => {
         nav.classList.add("scroll");  
     }
 });
+
+
+let btn = document.querySelector(".ham")
+
+btn.addEventListener("click",()=>{
+    let menu = document.querySelector(".btn");
+    menu.classList.toggle('hide');
+    menu.classList.toggle('shown');
+})
