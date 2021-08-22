@@ -192,6 +192,45 @@ nav div ul li a:hover, nav div a:hover{
 
 }
 
+.mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.mail .back i{
+    font-size: 33px;
+    color: black;
+}
+
+.mail .back{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mail p{
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
 
 
 
